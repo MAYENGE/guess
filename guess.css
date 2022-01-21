@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -118,4 +118,84 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  /* body {
+    height: 500vh;
+    width: 50%;
+  } */
+  #header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+  h1 {
+    color: rgb(252, 2, 2);
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+  #blog {
+    margin-right: 200px;
+    white-space: nowrap;
+  }
+  #notfound {
+    font-size: 4vw;
+    align-items: center;
+    margin-left: 250;
+    white-space: nowrap;
+  }
+
+  p,
+  button {
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+  .search-area {
+    font-size: 16px;
+  }
+  #bio {
+    word-wrap: break-word;
+  }
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+  }
+  .between {
+    font-size: 0.7rem;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: yellow;
+  }
+  .guess {
+    background: none;
+    border: 1px #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 2.5rem;
+    border-radius: 0%;
+    padding: 1.5rem;
+    width: 15rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .number {
+    background: #eee;
+    color: #333;
+    font-size: 2.5rem;
+    width: 8rem;
+    padding: 1.5rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transform: translate(-25%, 25%);
+  }
 }
