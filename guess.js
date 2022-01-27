@@ -19,6 +19,7 @@ document.querySelector(".again").onclick = function () {
   document.querySelector(".score").style.color = "white";
   document.querySelector(".message").style.color = "white";
   document.querySelector(".again").style.color = "black";
+  document.querySelector(".again").style.widrh="14rem"
 };
 document.querySelector(".check").onclick = function () {
   const guess = Number(document.querySelector(".guess").value);
@@ -38,6 +39,7 @@ document.querySelector(".check").onclick = function () {
       document.querySelector(".highscore").style.color = "red";
       document.querySelector(".score").style.color = "red";
       document.querySelector(".again").style.color = "red";
+    document.querySelector(".again").style.widrh="20rem"
       if (score > highScore) {
       highScore = score;
       document.querySelector(".highscore").textContent = highScore;
