@@ -11,7 +11,7 @@ document.querySelector(".again").onclick = function () {
   displayMessage("Start guessing...");
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guess").value = "";
-  document.querySelector(".guess").style..backgroundColor = "yellow";
+  document.querySelector(".guess").style.backgroundColor = "yellow";
   document.querySelector("body").style.backgroundColor = "black";
   document.querySelector(".number").style.width = "8rem";
   document.querySelector(".score").textContent = score;
@@ -32,7 +32,7 @@ document.querySelector(".check").onclick = function () {
     displayMessage("🎉Correct number");
     document.querySelector(".message").style.color = "red";
     
-      document.querySelector(".guess").style.color = "yellow";
+      document.querySelector(".guess").style.backgroundColor = "yellow";
       document.querySelector("body").style.backgroundColor = "blue";
       document.querySelector(".number").style.width = "15rem";
       document.querySelector(".number").textContent = secretNumber;
