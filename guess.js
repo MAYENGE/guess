@@ -22,10 +22,11 @@ document.querySelector(".again").onclick = function () {
 };
 document.querySelector(".check").onclick = function () {
   const guess = Number(document.querySelector(".guess").value);
-   document.querySelector(".guess").value = "";
+   
   if (!guess) {
     displayMessage("⛔No number");
   } else if (guess === secretNumber) {
+     document.querySelector(".guess").value = "";
     displayMessage("🎉Correct number");
     document.querySelector(".message").style.color = "red";
     
