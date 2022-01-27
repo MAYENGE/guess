@@ -2,7 +2,7 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
- document.querySelector(".guess").style.backgroundColor = "yellow";
+ 
 const displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
