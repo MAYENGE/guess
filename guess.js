@@ -27,8 +27,7 @@ document.querySelector(".check").onclick = function () {
   } else if (guess === secretNumber) {
     displayMessage("🎉Correct number");
     document.querySelector(".message").style.color = "red";
-    if (score > highScore) {
-      highScore = score;
+    
       document.querySelector(".highscore").textContent = highScore;
       document.querySelector("body").style.backgroundColor = "blue";
       document.querySelector(".number").style.width = "15rem";
@@ -37,6 +36,9 @@ document.querySelector(".check").onclick = function () {
       document.querySelector(".highscore").style.color = "red";
       document.querySelector(".score").style.color = "red";
       document.querySelector(".again").style.color = "red";
+      if (score > highScore) {
+      highScore = score;
+      document.querySelector(".highscore").textContent = highScore;
     }
   } else if (guess !== secretNumber) {
     if (score > 1) {
