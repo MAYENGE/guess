@@ -29,7 +29,7 @@ document.querySelector(".check").onclick = function () {
   if (!guess) {
     displayMessage("⛔No number");
   } else if (guess === secretNumber) {
-   document.querySelector(".again").textContent ='Restart' + ' 👈🏿'
+   document.querySelector(".again").style.width="20rem"
      document.querySelector(".guess").value = "";
     displayMessage("🎉Correct number");
     document.querySelector(".message").style.color = "red";
