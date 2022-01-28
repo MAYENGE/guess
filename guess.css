@@ -121,7 +121,7 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   /* body {
     height: 500vh;
     width: 50%;
